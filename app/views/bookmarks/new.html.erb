@@ -1,9 +1,13 @@
-<h1>Pick your favourite movies:</h1>
+<div class="movies-container">
+  <h1 class="movies-heading"><strong>Pick your favourite movies:</strong></h1>
 
-<%= simple_form_for([@list, @bookmark]) do |f| %>
-<%= f.association :movie %>
-<%= f.input :comment %>
-<%= f.submit %>
-<% end %>
+  <div class="bookmark-form">
+    <%= simple_form_for([@list, @bookmark]) do |f| %>
+    <%= f.association :movie %>
+    <%= f.input :comment %>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 
-<%= link_to "Return to Lists", lists_path %>
+  <%= link_to "Return to Lists", lists_path, class:"btn btn-light" %>
+</div>

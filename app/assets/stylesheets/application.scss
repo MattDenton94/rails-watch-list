@@ -10,3 +10,93 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.btn-primary, .btn-light {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list {
+  width: 50%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list a {
+  text-decoration: none;
+  color: #023e8a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-header, .movies-heading {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #03045e;
+  font-family: Tahoma;
+}
+
+.container {
+  background-color: #f2e8cf;
+}
+
+.movie-block {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.movie-block:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-block img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.movie-block h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-block p {
+  font-size: 16px;
+  color: #555;
+}
+
+.movie-block a {
+  color: rgb(0, 89, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.movies-container {
+  background-color: #f2e8cf;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bookmark-form {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.bookmark-form:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
