@@ -7,11 +7,15 @@
   <div class="movie-block">
     <h3><%= bookmark.movie.title %></h3>
     <p><%= bookmark.movie.overview %></p>
-    <img src="<%= bookmark.movie.poster_url %>" alt="<%= bookmark.movie.title %> poster">
+    <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
     <p>Rating: <%= bookmark.movie.rating %></p>
     <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   </div>
   <br><br>
+<% end %>
+
+<% @list.photos.each do |photo| %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 
 
