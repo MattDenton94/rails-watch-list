@@ -1,5 +1,5 @@
 <div class="movies-container">
-  <h1 class="movies-heading"><strong>Pick your favourite movies:</strong></h1>
+  <h1 class="movies-heading"><strong>Add your favourite movies</strong></h1>
 
   <div class="bookmark-form">
     <%= simple_form_for([@list, @bookmark]) do |f| %>
@@ -9,5 +9,5 @@
     <% end %>
   </div>
 
-  <%= link_to "Return to Lists", lists_path, class:"btn btn-light" %>
+  <%= link_to "Return to Lists", lists_path, class:"btn btn-success" %>
 </div>

@@ -11,13 +11,20 @@
 @import "components/index";
 @import "pages/index";
 
-.btn-primary, .btn-light {
-  margin-left: 20px;
+body {
+  background-color: black; /* Light gray color */
+}
+
+.btn-success, .btn-light {
+  //margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  float: right;
+  margin-right: 10px;
 }
 
 .list {
+  margin-top: 200px;
   width: 50%;
   margin-left: 10px;
   display: flex;
@@ -26,20 +33,24 @@
 
 .list a {
   text-decoration: none;
-  color: #023e8a;
+  color: white;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: monospace;
+  font-size: 30px;
 }
 
-.main-header, .movies-heading {
-  margin-top: 20px;
+.list a:hover {
+  color: #ffd60a;
+}
+
+.main-header, .movies-heading, .list-heading {
+  margin-top: 50px;
   margin-left: 10px;
-  color: #03045e;
+  color: #ffd60a;
   font-family: Tahoma;
-}
-
-.container {
-  background-color: #f2e8cf;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .movie-block {
@@ -50,10 +61,15 @@
   border-radius: 8px;
   width: 75%;
   margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .movie-block:hover {
-  background-color: #e0e0e0;
+  background-color: #c2d9c3;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -61,6 +77,8 @@
   max-width: 100%;
   height: auto;
   margin-top: 10px;
+  display: block;
+  align-items: center;
 }
 
 .movie-block h3 {
@@ -79,14 +97,7 @@
   font-weight: bold;
 }
 
-.movies-container {
-  background-color: #f2e8cf;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.bookmark-form {
+.bookmark-form, .new-list {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: 20px;
@@ -100,3 +111,23 @@
   background-color: #e0e0e0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.quote {
+  color: #40e137;
+  font-family: Comic Sans MS;
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn-info {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.discard {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+

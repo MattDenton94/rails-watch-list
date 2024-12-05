@@ -1,12 +1,21 @@
 <div class="container">
+  <h1 class="main-header"><strong>My Movie Lists</strong></h1>
 
-  <h1 class="main-header"><strong>My Movie Lists:</strong></h1>
-
-  <%= link_to "Create a movie list", new_list_path, class:"btn btn-primary" %>
+  <%= link_to "CREATE A LIST", new_list_path, class: "btn btn-success" %>
 
   <ul class="list">
-    <% @lists.each do |list|  %>
-      <%= link_to list.name, list_path(list) %>
+    <% @lists.each do |list| %>
+      <% if list.photo.attached? %>
+      <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+      <li>
+        <%= link_to list.name, list_path(list) %>
+      </li>
     <% end %>
   </ul>
+
+  <blockquote class="quote">
+    "Movies are the memories of our lifetime, we need to keep them alive." - Martin Scorsese
+  </blockquote>
+
 </div>
